@@ -1,0 +1,73 @@
+.user{
+    display: flex;
+    justify-content: center;
+}
+.user h1{
+    font-size: 50px;
+    margin-top: 40px;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+}
+.img-div img{
+    height: 190px;
+    border-radius: 149px;
+    margin: 15px 0px;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+}
+.example-button-container{
+    position: fixed;
+   right: 4%;
+   bottom: 8%;
+}
+.example-button-container button{
+    width: 60px;
+    height: 60px;
+}
+.upload-img{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upload-bg{
+    background: #dad4d48c;
+    border-radius: 5px;
+    box-shadow: 0px 0px 13px #00000059;
+    height: 320px;
+    text-align: center;
+    width: 500px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.upload{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 30rem;
+    margin-top: 100px;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20rem;
+    
+}
+.contents button{
+    margin: 10px 15px;
+}
+.contents input{
+    margin: 10px 15px;
+    
+}
+mat-form-field{
+    width: 91%;
+}

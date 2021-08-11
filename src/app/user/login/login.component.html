@@ -1,0 +1,25 @@
+<div class="parent">
+    <div class="background">
+    <div class="form-div">
+        <form   #myForm="ngForm" (ngSubmit)="onLogin(myForm)" >
+            <div>
+                <h1 class="sign"> Sign In</h1>
+            </div>
+            <div>
+                <span class="error" *ngIf="email.invalid&&email.touched">Please enter email</span>
+                <input #email="ngModel" name="email" ngModel required type="text" name="email" placeholder="Email">
+            </div>
+            <div>
+                <span class="error" *ngIf="password.invalid&&password.touched">Please enter password</span>
+                <input #password="ngModel" name="password" ngModel required type="password" name="password" placeholder="Password" >
+            </div>
+            <div>
+            <button>Sign  In</button>
+            </div>
+            <div class="dont">
+                <a routerLink="/register"><span>Don't have account? Sign Up</span></a>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

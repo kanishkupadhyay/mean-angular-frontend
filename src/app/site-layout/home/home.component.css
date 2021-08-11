@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+.parent{
+    background-image: url('../../../assets/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.child-div1
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 35rem;
+    text-align: center;
+}
+.child-div1 h1{
+    color: red;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.child-div1 p{
+    color: #fff;
+    margin: 10px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.child-div1 button{
+    color: #fff;
+    background: red;
+    padding: 15px 20px;
+    border-radius: 3px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    margin-top: 30px;
+}
+@media(max-width:996px){
+    .child-div1 p{
+        font-size: 25px;
+    }
+}
+@media(max-width:772px){
+    .child-div1 p{
+        font-size: 20px;
+    }
+    .child-div1 h1{
+        font-size: 50px;
+    }
+}
+@media(max-width:656px){
+    .child-div1 p{
+        font-size: 20px;
+    }
+    .child-div1 h1{
+        font-size: 45px;
+    }
+}
+@media(max-width:564px){
+    .child-div1 h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:420px){
+   
+    .child-div1 h1{
+        font-size: 33px;
+    }
+}

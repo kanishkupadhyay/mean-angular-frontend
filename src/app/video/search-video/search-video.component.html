@@ -1,0 +1,17 @@
+    <!-- <div *ngIf="movie.data.null">
+<h1>Movie not Found</h1>
+    </div> -->
+    <div class="main container" style="display: flex; justify-content: center;margin-top: 40px;">
+      <div class="col-lg-9 ">
+          <div class="ss" style="display: flex; justify-content: center;" >
+                  <div class="card" style="width: 20rem;" >
+                      <img class="card-img-top" src="{{movie.data.imgsrc}}" alt="Card image cap">
+                      <div class="card-body">
+                        <h2 class="card-title">{{movie.data.name}}</h2>
+                        <p class="card-text">Actors:{{movie.data.actor}}</p>
+                        <a routerLink="watch/{{movie.data.name}}/{{movie.data._id}}" class="btn btn-primary">Watch</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>

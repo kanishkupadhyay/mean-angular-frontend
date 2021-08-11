@@ -1,0 +1,90 @@
+.parent{
+    background-image: url('https://cutewallpaper.org/21/movie-collage-wallpapers/Collage-of-Movie-Posters-my-gf-put-together-awhile-back-.jpg');
+    background-size: cover;
+    height: 110%;
+}
+.form-div{
+    display: flex;
+    justify-content: center;
+}
+input.ng-invalid.ng-touched{
+    border: 2px solid red !important;
+    box-shadow: 0px 0px 13px 0px rgba(255, 0, 0, 0.829) inset;
+}
+.background{
+    background:#00000099;
+    height: 100%;
+}
+form{
+    background: rgba(0,0,0,.75);
+    height: 400px;
+    width: 400px;
+    padding: 40px 30px;
+    margin-top: 8%;
+    border-radius: 5px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+::placeholder{
+    color: #8c8c8c;
+}
+.error{
+    margin-right: 158px;
+    color: red;
+}
+form input{
+    margin: 10px 0px;
+    width: 300px;
+    padding: 12px 20px;
+    outline: none;
+    background: #333;
+    color: #fff;
+    border-radius: 3px;
+}
+button{
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0 12px;
+    background: #e50914;
+    color:#fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    border:  2px solid red;
+}
+.sign{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 28px;
+
+}
+.dont a{
+    text-decoration: none;
+}
+.dont span:hover{
+    color:blue
+}
+.dont span{
+color: #fff;
+}
+@media(max-width:900px){
+    form{
+        margin-top: 15%;
+    }
+}
+@media(max-width:636px){
+    form{
+        margin-top: 20%;
+    }
+}
+@media(max-width:440px){
+    form{
+        margin-top: 25%;
+        width: 350px;
+    }
+}

@@ -1,0 +1,37 @@
+<div class="parent">
+    <div class="background">
+    <div class="form-div">
+        <form  (ngSubmit)="onSubmitForm(myForm)" #myForm="ngForm" >
+            <div>
+                <h1 class="sign"> Sign Up</h1>
+            </div>
+            <div>
+                <span *ngIf="name.invalid && name.touched">*Please enter your name</span>
+                <input #name="ngModel" minlength="3"  ngModel required type="text" name="name" placeholder="Full Name">
+            </div>
+             <div>
+                <span *ngIf="email.invalid && email.touched">*Please enter your email</span>
+                <input #email="ngModel" ngModel required type="text" name="email" placeholder="Email">
+            </div>
+            <div>
+                <span *ngIf="mobile.invalid && mobile.touched">*Please enter your mobile</span>
+                <input #mobile="ngModel" minlength="10" maxlength="10" ngModel required type="number" name="phone" placeholder="Mobile"> 
+            </div>
+            <div>
+                <span *ngIf="password.invalid && password.touched">*Please enter your password</span>
+                <input #password="ngModel" minlength="8" ngModel required type="password" name="password" placeholder="Password" >
+            </div>
+            <div>
+                <span *ngIf="confirmPassword.invalid && confirmPassword.touched">*Please confirm your password</span>
+                <input #confirmPassword="ngModel" minlength="8" ngModel required type="password" name="confirmPassword" placeholder="Confirm Password" >
+            </div>
+            <div>
+                <button>Sign  In</button>
+            </div>
+            <div class="dont">
+                <a routerLink="/login"><span>Already have account? Sign In</span></a>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

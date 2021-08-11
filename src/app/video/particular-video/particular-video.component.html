@@ -1,0 +1,38 @@
+<div>
+    <div class="spinner" *ngIf="spinner">
+        <mat-spinner color="warn"></mat-spinner>
+    </div>
+    <div >
+      <div class="video-div">
+          <video class="my-video" autoplay muted loop> 
+              <source src="../../../assets/video/demovideo.mp4" type="video/mp4">
+              <source src="../../../assets/video/demovideo.mp4" type="video/mp4">
+          </video>
+        <div class="img-div">
+          <img class="image" [style.opacity]="opacity?'1':'0.2'" src="{{video.imgsrc}}" alt="Error loading image" srcset="">
+        </div>
+        <div class="play-btn">
+            <div>
+                <a href="{{video.iframe}}" target="blank"> <button class="play" mat-raised-button  color="primary">Play</button></a>
+               </div>
+               <div>
+                   <button class="play" mat-raised-button color="primary">Like</button>
+               </div>
+        </div>
+        <div class="parent">
+           <div>
+            <h2>Movie :{{video.name}}</h2><hr>
+           </div>
+           <div>
+               <h2>Actors:{{video.actor}}</h2><hr>
+           </div>
+           <div>
+            <h2>Release Date:{{video.uploadDate}}</h2><hr>
+        </div>
+        <div>
+            <h2>Category:{{video.category}}</h2>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="user" [style.display]="show?'block':'none'">
+<div class="example-button-container">
+    <button (click)="uploadImg()" mat-mini-fab color="warn" aria-label="Example icon button with a filter list icon">
+        <mat-icon>cloud_upload</mat-icon>
+    </button>
+  </div>
+<div>
+    <div class="user">
+        <h1>{{userName |titlecase}}</h1>
+    </div>
+    <div class="img-div">
+        <img src="{{img}}" alt="Error loading image" srcset="">
+    </div>
+    <hr>
+    <div class="detail">
+        <h2>Mobile :{{phone}}</h2>
+    </div>
+    <div class="detail">
+        <h2>Email:{{email}}</h2>
+    </div>
+</div>
+</div>
+
+<div class="upload"  [style.display]="!show?'block':'none'">
+<div class="upload-img">
+    <div class="upload-bg">
+        <div class="contents">
+            <h1>Upload image </h1>
+        <form (ngSubmit)="uploadSubmit(myImg)" #myImg="ngForm" class="example-form">
+            <mat-form-field class="example-full-width">
+              <input name="src" ngModel required matInput placeholder="Enter image url">
+            </mat-form-field>
+            <button mat-flat-button color="primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
